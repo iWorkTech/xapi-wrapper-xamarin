@@ -1,0 +1,36 @@
+%YAML 1.2
+---
+build: 
+  - path: src/xAPIWrapper/xAPIWrapper.sln
+    configuration: Release
+libraries: 
+  ios-unified: 
+    - src/xAPIWrapper/xAPIWrapper/bin/Release/TinCan.xAPIWrapper.dll
+    - src/xAPIWrapper/xAPIWrapper/bin/Release/TinCan.Standard.dll
+  android: 
+    - src/xAPIWrapper/xAPIWrapper/bin/Release/TinCan.xAPIWrapper.dll
+    - src/xAPIWrapper/xAPIWrapper/bin/Release/TinCan.Standard.dll
+icons: 
+  - xAPIWrapper_128x128.png
+  - xAPIWrapper_512x512.png
+version: 1.0.1
+details: Details.md
+getting-started: GettingStarted.md
+samples: 
+  - path: samples/iOS/TinCan.xAPIWrapper.iOS/TinCan.xAPIWrapper.iOS.sln
+    name: iOS Sample
+    nobuild: "true"
+    configuration: Release|iPhone
+  - path: samples/Droid/TinCan.xAPIWrapper.Droid/TinCan.xAPIWrapper.Droid.sln
+    name: Droid Sample
+    nobuild: "true"
+    configuration: Release|Any CPU
+id: xAPIWrapper
+summary: Allows user to capture user experience and analyse it.
+publisher-url: http://www.iworktech.com
+license: License.md
+screenshots: 
+  - screenshot.png
+name: xAPIWrapper
+publisher: IWORKTECH INC.
+...
