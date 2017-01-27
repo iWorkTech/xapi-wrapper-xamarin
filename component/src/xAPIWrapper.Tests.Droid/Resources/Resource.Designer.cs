@@ -27,7 +27,6 @@ namespace xAPIWrapper.Tests.Droid
 		public static void UpdateIdValues()
 		{
 			global::Nunit.Runner.Resource.String.ApplicationName = global::xAPIWrapper.Tests.Droid.Resource.String.ApplicationName;
-			global::Nunit.Runner.Resource.String.Hello = global::xAPIWrapper.Tests.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::xAPIWrapper.Tests.Droid.Resource.Attribute.actionBarSize;
 		}
 		
