@@ -1,8 +1,8 @@
-A C#/.NET library for implementing Tin Can API.
+##A C#/.NET Standard library for interfacing with any xAPI/TinCan Complaint LRS
 
 For hosted API documentation, basic usage instructions, supported version listing, etc. visit the main project website at:
 
-http://rusticisoftware.github.io/TinCan.NET/
+http://xapi.iworktech.com 
 
 For more information about the Tin Can API visit:
 
