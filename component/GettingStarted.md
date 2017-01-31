@@ -32,6 +32,7 @@ Using the following code can be used to send a xAPI statement to an LRS
                                                 // endpoint, username, password
                 var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
                 var task = await apiWrapper.SendStatement(statement);
+```
 
 ### For iOS 
 Brief:
@@ -65,3 +66,4 @@ async void createStatement(Statement statement, string str)
                 }
             }
         }
+```
