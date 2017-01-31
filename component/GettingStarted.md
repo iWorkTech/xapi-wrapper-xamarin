@@ -45,7 +45,8 @@ async void createStatement(Statement statement, string str)
 
             if (!netStatus)
             {
-                UIAlertView _error = new UIAlertView("Error", "Please Check Your Network", null, "OK", null);
+                UIAlertView _error = new UIAlertView("Error", "Please Check Your Network", 
+                null, "OK", null);
                 _error.Show();
             }
             else
