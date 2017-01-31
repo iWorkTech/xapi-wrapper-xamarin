@@ -28,10 +28,10 @@ Using the following code can be used to send a xAPI statement to an LRS
 
 ```
  button.Click += async delegate {
-                var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty); 
-                                                // endpoint, username, password
-                var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
-                var task = await apiWrapper.SendStatement(statement);
+        var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty); 
+                                        // endpoint, username, password
+        var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
+        var task = await apiWrapper.SendStatement(statement);
 ```
 
 ### For iOS 
@@ -40,31 +40,31 @@ Using the following code can be used to send a xAPI statement to an LRS
 
 ```
 async void createStatement(Statement statement, string str)
+{
+    bool netStatus = Reachability.IsHostReachable("www.google.com");
+
+    if (!netStatus)
+    {
+        UIAlertView _error = new UIAlertView("Error", "Please Check Your Network", 
+        null, "OK", null);
+        _error.Show();
+    }
+    else
+    {
+        var task = await apiWrapper.SendStatement(statement);
+
+        var title = $"{_count++}. ";
+
+        if (task.Success)
         {
-            bool netStatus = Reachability.IsHostReachable("www.google.com");
-
-            if (!netStatus)
-            {
-                UIAlertView _error = new UIAlertView("Error", "Please Check Your Network", 
-                null, "OK", null);
-                _error.Show();
-            }
-            else
-            {
-                var task = await apiWrapper.SendStatement(statement);
-
-                var title = $"{_count++}. ";
-
-                if (task.Success)
-                {
-                    title = title + $"User experienced button \"{ str}\". \n";
-                    msg = msg + title;
-                }
-                else
-                {
-                    title = title + $"{ str} statement not sent! \n";
-                    msg = msg + title;
-                }
-            }
+            title = title + $"User experienced button \"{ str}\". \n";
+            msg = msg + title;
         }
+        else
+        {
+            title = title + $"{ str} statement not sent! \n";
+            msg = msg + title;
+        }
+    }
+}
 ```
