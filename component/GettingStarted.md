@@ -27,11 +27,11 @@ Brief:
 Using the following code can be used to send a xAPI statement to an LRS
 
 ```
- button.Click += async delegate {
-        var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty); 
-                                        // endpoint, username, password
-        var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
-        var task = await apiWrapper.SendStatement(statement);
+button.Click += async delegate {
+    var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty); 
+                                    // endpoint, username, password
+    var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
+    var task = await apiWrapper.SendStatement(statement);
 ```
 
 ### For iOS 
