@@ -1,4 +1,4 @@
-# Interface with any LRS from your Xamanrin Mobile Apps
+# Interface with any LRS from your Xamarin Mobile Apps
 This component helps in capturing xAPI/TINCAN statements and other artifacts that can to pushed to any standard's compliant LRS. It has two main libraries in the component that can be used independently. 
 - TINCAN Standard .NET Libary
 - xAPIWrapper, wrapper and simplified interface
