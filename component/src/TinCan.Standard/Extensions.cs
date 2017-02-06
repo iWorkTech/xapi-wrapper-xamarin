@@ -41,14 +41,14 @@ namespace TinCan.Standard
         /// <summary>
         /// The map
         /// </summary>
-        private readonly Dictionary<Uri, JToken> _map;
+        private readonly Dictionary<Object, JToken> _map;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Extensions"/> class.
         /// </summary>
         public Extensions()
         {
-            _map = new Dictionary<Uri, JToken>();
+            _map = new Dictionary<Object, JToken>();
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace TinCan.Standard
         {
             foreach (var item in jobj)
             {
-                _map.Add(new Uri(item.Key), item.Value);
+                _map.Add(item.Key, item.Value);
             }
         }
 
