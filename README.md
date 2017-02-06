@@ -1,10 +1,12 @@
 # Interface with any LRS from your Xamarin Mobile or .NET Apps
-This component helps in capturing xAPI/TINCAN statements and other artifacts that can to pushed to any standard's compliant LRS. It has two main libraries in the component that can be used independently. 
+The xAPIWrapper component and the xAPI.NET Standard Library enables capturing of xAPI/TINCAN statements and other artifacts that can to pushed to any standard's compliant LRS. It has two main libraries in the component that can be used independently. 
 - TINCAN Standard .NET Libary
 - xAPIWrapper, wrapper and simplified interface
-- For more information on xAPI/TINCAN refer to this site [ADL](https://www.adlnet.gov/adl-research/performance-tracking-analysis/experience-api/)
+
+## More information on xAPI/TINCAN
+- For information on xAPI/TINCAN refer to this site [ADL](https://www.adlnet.gov/adl-research/performance-tracking-analysis/experience-api/)
 - For technical documentation refer to this site [TINCAN API](http://tincanapi.com/)
-- For more information on Xamarin refer to this site [Xamarin](http://www.xamarin.com/)
+- For information on Xamarin refer to this site [Xamarin](http://www.xamarin.com/)
 
 With easy-to-use SDKs for Android and iOS, helpful classes and methods to track user activities, as TINCAN statements, activities or scores and other interacations in a simple Actor, Object, Verb verbatim. 
 
