@@ -23,9 +23,7 @@ With easy-to-use SDKs for Android and iOS, helpful classes and methods to track 
 Import component in your Android and iOS apps.
 
 ### For Android 
-Brief:
-Using the following code can be used to send a xAPI statement to an LRS
-
+Brief: Following code can be used to send a xAPI statement to an LRS
 ```
 button.Click += async delegate
 {
@@ -40,9 +38,7 @@ button.Click += async delegate
 ```
 
 ### For iOS 
-Brief:
-Using the following code can be used to send a xAPI statement to an LRS
-
+Brief: Following code can be used to send a xAPI statement to an LRS
 ```
 Button.TouchUpInside += async delegate
 {
