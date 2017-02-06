@@ -29,7 +29,7 @@ Brief: Following code can be used to send a xAPI statement to an LRS
 ```
 button.Click += async delegate
 {
-    var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty);
+    var apiWrapper = new APIWrapper("xAPI Endpoint", "Your Identity", "Your Secret");
     var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
     var task = await apiWrapper.SendStatement(statement);
     if (task.Success)
@@ -44,7 +44,7 @@ Brief: Following code can be used to send a xAPI statement to an LRS
 ```
 Button.TouchUpInside += async delegate
 {
-   var apiWrapper = new APIWrapper(string.Empty, string.Empty, string.Empty);
+   var apiWrapper = new APIWrapper("xAPI Endpoint", "Your Identity", "Your Secret");
    var statement = apiWrapper.PrepareStatement("test@ald.net", "experienced", "Activity");
    var task = await apiWrapper.SendStatement(statement);
    var title = $"sending {_count} statement!";
