@@ -2,12 +2,6 @@
   "version": 2,
   "targets": {
     ".NETStandard,Version=v1.6": {
-      "docfx.console/2.11.2": {
-        "type": "package",
-        "build": {
-          "build/docfx.console.targets": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -1485,91 +1479,6 @@
     }
   },
   "libraries": {
-    "docfx.console/2.11.2": {
-      "sha512": "d1v5gVuGcgkHNvTpy4vCDmAC5QDi6GWAe30GzSLl0OUMOEHEN3kJdIYQmaKCNfEXmp+y0qjUrUcPSxfCSMM4Ng==",
-      "type": "package",
-      "path": "docfx.console/2.11.2",
-      "files": [
-        "build/docfx.console.targets",
-        "content/api/index.md",
-        "content/articles/intro.md",
-        "content/articles/toc.md",
-        "content/docfx.json",
-        "content/index.md",
-        "content/toc.yml",
-        "docfx.console.2.11.2.nupkg.sha512",
-        "docfx.console.nuspec",
-        "tools/CommandLine.dll",
-        "tools/DotLiquid.dll",
-        "tools/HtmlAgilityPack.dll",
-        "tools/Jint.dll",
-        "tools/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
-        "tools/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
-        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Microsoft.CodeAnalysis.Workspaces.Desktop.dll",
-        "tools/Microsoft.CodeAnalysis.Workspaces.dll",
-        "tools/Microsoft.CodeAnalysis.dll",
-        "tools/Microsoft.DocAsCode.Build.Common.dll",
-        "tools/Microsoft.DocAsCode.Build.ConceptualDocuments.dll",
-        "tools/Microsoft.DocAsCode.Build.Engine.dll",
-        "tools/Microsoft.DocAsCode.Build.ManagedReference.dll",
-        "tools/Microsoft.DocAsCode.Build.ResourceFiles.dll",
-        "tools/Microsoft.DocAsCode.Build.RestApi.dll",
-        "tools/Microsoft.DocAsCode.Build.TableOfContents.dll",
-        "tools/Microsoft.DocAsCode.Common.dll",
-        "tools/Microsoft.DocAsCode.DataContracts.Common.dll",
-        "tools/Microsoft.DocAsCode.DataContracts.ManagedReference.dll",
-        "tools/Microsoft.DocAsCode.DataContracts.RestApi.dll",
-        "tools/Microsoft.DocAsCode.Dfm.dll",
-        "tools/Microsoft.DocAsCode.Glob.dll",
-        "tools/Microsoft.DocAsCode.MarkdownLite.dll",
-        "tools/Microsoft.DocAsCode.Metadata.ManagedReference.dll",
-        "tools/Microsoft.DocAsCode.Plugins.dll",
-        "tools/Microsoft.DocAsCode.YamlSerialization.dll",
-        "tools/Microsoft.DotNet.Cli.Utils.dll",
-        "tools/Microsoft.DotNet.Compiler.Common.dll",
-        "tools/Microsoft.DotNet.Files.dll",
-        "tools/Microsoft.DotNet.InternalAbstractions.dll",
-        "tools/Microsoft.DotNet.ProjectModel.Workspaces.dll",
-        "tools/Microsoft.DotNet.ProjectModel.dll",
-        "tools/Microsoft.Extensions.DependencyModel.dll",
-        "tools/Microsoft.Owin.Diagnostics.dll",
-        "tools/Microsoft.Owin.FileSystems.dll",
-        "tools/Microsoft.Owin.Host.HttpListener.dll",
-        "tools/Microsoft.Owin.Hosting.dll",
-        "tools/Microsoft.Owin.StaticFiles.dll",
-        "tools/Microsoft.Owin.dll",
-        "tools/Newtonsoft.Json.dll",
-        "tools/NuGet.Common.dll",
-        "tools/NuGet.Configuration.dll",
-        "tools/NuGet.DependencyResolver.Core.dll",
-        "tools/NuGet.Frameworks.dll",
-        "tools/NuGet.LibraryModel.dll",
-        "tools/NuGet.Packaging.Core.Types.dll",
-        "tools/NuGet.Packaging.Core.dll",
-        "tools/NuGet.Packaging.dll",
-        "tools/NuGet.ProjectModel.dll",
-        "tools/NuGet.Protocol.Core.Types.dll",
-        "tools/NuGet.Protocol.Core.v3.dll",
-        "tools/NuGet.Repositories.dll",
-        "tools/NuGet.RuntimeModel.dll",
-        "tools/NuGet.Versioning.dll",
-        "tools/Nustache.Core.dll",
-        "tools/Owin.dll",
-        "tools/System.Collections.Immutable.dll",
-        "tools/System.Composition.AttributedModel.dll",
-        "tools/System.Composition.Convention.dll",
-        "tools/System.Composition.Hosting.dll",
-        "tools/System.Composition.Runtime.dll",
-        "tools/System.Composition.TypedParts.dll",
-        "tools/System.Reflection.Metadata.dll",
-        "tools/YamlDotNet.dll",
-        "tools/docfx.exe",
-        "tools/docfx.exe.config",
-        "tools/install.ps1"
-      ]
-    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -5386,8 +5295,7 @@
       "NUnit.ConsoleRunner >= 3.6.0",
       "NUnit3TestAdapter >= 3.7.0",
       "NUnitLite >= 3.6.0",
-      "Newtonsoft.Json >= 9.0.1",
-      "docfx.console >= 2.11.2"
+      "Newtonsoft.Json >= 9.0.1"
     ],
     ".NETStandard,Version=v1.6": []
   },
@@ -5412,7 +5320,6 @@
       }
     },
     "dependencies": {
-      "docfx.console": "2.11.2",
       "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
       "NETStandard.Library": "1.6.1",
       "Newtonsoft.Json": "9.0.1",
