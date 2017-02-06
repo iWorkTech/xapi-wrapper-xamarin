@@ -31,12 +31,12 @@ using System.Reflection;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle("xAPIWrapper")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("xAPIWrapper C# wrapper to interface with LRS")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("joe")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("iWork Technologies LLC & Pvt. Ltd.")]
+[assembly: AssemblyProduct("SocialLRS, xAPIWrapper C#")]
+[assembly: AssemblyCopyright("iWork Technologies LLC & Pvt. Ltd.")]
+[assembly: AssemblyTrademark("SocialLRS, xAPIWrapper C#")]
 [assembly: AssemblyCulture("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
