@@ -3,7 +3,7 @@ The xAPIWrapper component and the xAPI.NET Standard Library enables capturing of
 - TINCAN Standard .NET Libary
 - xAPIWrapper, wrapper and simplified interface
 
-## More information on xAPI/TINCAN
+## What is xAPI/TINCAN?
 - For information on xAPI/TINCAN refer to this site [ADL](https://www.adlnet.gov/adl-research/performance-tracking-analysis/experience-api/)
 - For technical documentation refer to this site [TINCAN API](http://tincanapi.com/)
 - For information on Xamarin refer to this site [Xamarin](http://www.xamarin.com/)
