@@ -1,0 +1,2 @@
+android.app.Application
+TinCan.xAPIWrapper.Droid.TinCan.xAPIWrapper.Droid

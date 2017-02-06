@@ -1,0 +1,2534 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TinCan.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:TinCan.Standard.About">
+            <summary>
+            Class About.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.About.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.About"/> class.
+            </summary>
+            <param name="str">The string.</param>
+        </member>
+        <member name="M:TinCan.Standard.About.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.About"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.About.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.About"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.About.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:TinCan.Standard.About.Extensions">
+            <summary>
+            Gets or sets the extensions.
+            </summary>
+            <value>The extensions.</value>
+        </member>
+        <member name="M:TinCan.Standard.About.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Activity">
+            <summary>
+            Class Activity.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+            <seealso cref="T:TinCan.Standard.IStatementTarget" />
+        </member>
+        <member name="F:TinCan.Standard.Activity.OBJECT_TYPE">
+            <summary>
+            The object type
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.Activity._id">
+            <summary>
+            The identifier
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Activity.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Activity"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Activity.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Activity"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Activity.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Activity"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Activity.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.Activity.Definition">
+            <summary>
+            Gets or sets the definition.
+            </summary>
+            <value>The definition.</value>
+        </member>
+        <member name="P:TinCan.Standard.Activity.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="M:TinCan.Standard.Activity.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Activity.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Activity">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Activity"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.ActivityDefinition">
+            <summary>
+            Class ActivityDefinition.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.ActivityDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ActivityDefinition"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.ActivityDefinition.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ActivityDefinition"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.ActivityDefinition.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ActivityDefinition"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.ActivityDefinition.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:TinCan.Standard.ActivityDefinition.MoreInfo">
+            <summary>
+            Gets or sets the more information.
+            </summary>
+            <value>The more information.</value>
+        </member>
+        <member name="P:TinCan.Standard.ActivityDefinition.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:TinCan.Standard.ActivityDefinition.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:TinCan.Standard.ActivityDefinition.Extensions">
+            <summary>
+            Gets or sets the extensions.
+            </summary>
+            <value>The extensions.</value>
+        </member>
+        <member name="M:TinCan.Standard.ActivityDefinition.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ActivityDefinition.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.ActivityDefinition">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.ActivityDefinition"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Agent">
+            <summary>
+            Class Agent.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+            <seealso cref="T:TinCan.Standard.IStatementTarget" />
+        </member>
+        <member name="F:TinCan.Standard.Agent.OBJECT_TYPE">
+            <summary>
+            The object type
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Agent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Agent"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Agent.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Agent"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Agent.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Agent"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Agent.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:TinCan.Standard.Agent.Mbox">
+            <summary>
+            Gets or sets the mbox.
+            </summary>
+            <value>The mbox.</value>
+        </member>
+        <member name="P:TinCan.Standard.Agent.Mbox_Sha1Sum">
+            <summary>
+            Gets or sets the mbox sha1sum.
+            </summary>
+            <value>The mbox sha1sum.</value>
+        </member>
+        <member name="P:TinCan.Standard.Agent.Openid">
+            <summary>
+            Gets or sets the openid.
+            </summary>
+            <value>The openid.</value>
+        </member>
+        <member name="P:TinCan.Standard.Agent.Account">
+            <summary>
+            Gets or sets the account.
+            </summary>
+            <value>The account.</value>
+        </member>
+        <member name="P:TinCan.Standard.Agent.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="M:TinCan.Standard.Agent.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Agent.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Agent">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Agent"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.AgentAccount">
+            <summary>
+            Class AgentAccount.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.AgentAccount"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.AgentAccount"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.AgentAccount"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.#ctor(System.Uri,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.AgentAccount"/> class.
+            </summary>
+            <param name="homePage">The home page.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:TinCan.Standard.AgentAccount.HomePage">
+            <summary>
+            Gets or sets the home page.
+            </summary>
+            <value>The home page.</value>
+        </member>
+        <member name="P:TinCan.Standard.AgentAccount.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.AgentAccount.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.AgentAccount">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.AgentAccount"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Context">
+            <summary>
+            Class Context.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.Context.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Context"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Context.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Context"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Context.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Context"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Context.Registration">
+            <summary>
+            Gets or sets the registration.
+            </summary>
+            <value>The registration.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Instructor">
+            <summary>
+            Gets or sets the instructor.
+            </summary>
+            <value>The instructor.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Team">
+            <summary>
+            Gets or sets the team.
+            </summary>
+            <value>The team.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.ContextActivities">
+            <summary>
+            Gets or sets the context activities.
+            </summary>
+            <value>The context activities.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Revision">
+            <summary>
+            Gets or sets the revision.
+            </summary>
+            <value>The revision.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Platform">
+            <summary>
+            Gets or sets the platform.
+            </summary>
+            <value>The platform.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Language">
+            <summary>
+            Gets or sets the language.
+            </summary>
+            <value>The language.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Statement">
+            <summary>
+            Gets or sets the statement.
+            </summary>
+            <value>The statement.</value>
+        </member>
+        <member name="P:TinCan.Standard.Context.Extensions">
+            <summary>
+            Gets or sets the extensions.
+            </summary>
+            <value>The extensions.</value>
+        </member>
+        <member name="M:TinCan.Standard.Context.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Context.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Context">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Context"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.ContextActivities">
+            <summary>
+            Class ContextActivities.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.ContextActivities.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ContextActivities"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.ContextActivities.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ContextActivities"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.ContextActivities.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.ContextActivities"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.ContextActivities.Parent">
+            <summary>
+            Gets or sets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="P:TinCan.Standard.ContextActivities.Grouping">
+            <summary>
+            Gets or sets the grouping.
+            </summary>
+            <value>The grouping.</value>
+        </member>
+        <member name="P:TinCan.Standard.ContextActivities.Category">
+            <summary>
+            Gets or sets the category.
+            </summary>
+            <value>The category.</value>
+        </member>
+        <member name="P:TinCan.Standard.ContextActivities.Other">
+            <summary>
+            Gets or sets the other.
+            </summary>
+            <value>The other.</value>
+        </member>
+        <member name="M:TinCan.Standard.ContextActivities.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ContextActivities.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.ContextActivities">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.ContextActivities"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Documents.ActivityProfileDocument">
+            <summary>
+            Class ActivityProfileDocument.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Documents.Document" />
+        </member>
+        <member name="P:TinCan.Standard.Documents.ActivityProfileDocument.Activity">
+            <summary>
+            Gets or sets the activity.
+            </summary>
+            <value>The activity.</value>
+        </member>
+        <member name="T:TinCan.Standard.Documents.AgentProfileDocument">
+            <summary>
+            Class AgentProfileDocument.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Documents.Document" />
+        </member>
+        <member name="P:TinCan.Standard.Documents.AgentProfileDocument.Agent">
+            <summary>
+            Gets or sets the agent.
+            </summary>
+            <value>The agent.</value>
+        </member>
+        <member name="T:TinCan.Standard.Documents.Document">
+            <summary>
+            Class Document.
+            </summary>
+        </member>
+        <member name="P:TinCan.Standard.Documents.Document.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.Document.Etag">
+            <summary>
+            Gets or sets the etag.
+            </summary>
+            <value>The etag.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.Document.Timestamp">
+            <summary>
+            Gets or sets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.Document.ContentType">
+            <summary>
+            Gets or sets the type of the content.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.Document.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.Documents.StateDocument">
+            <summary>
+            Class StateDocument.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Documents.Document" />
+        </member>
+        <member name="P:TinCan.Standard.Documents.StateDocument.Activity">
+            <summary>
+            Gets or sets the activity.
+            </summary>
+            <value>The activity.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.StateDocument.Agent">
+            <summary>
+            Gets or sets the agent.
+            </summary>
+            <value>The agent.</value>
+        </member>
+        <member name="P:TinCan.Standard.Documents.StateDocument.Registration">
+            <summary>
+            Gets or sets the registration.
+            </summary>
+            <value>The registration.</value>
+        </member>
+        <member name="T:TinCan.Standard.Extensions">
+            <summary>
+            Class Extensions.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="F:TinCan.Standard.Extensions._map">
+            <summary>
+            The map
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Extensions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Extensions"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Extensions.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Extensions"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="M:TinCan.Standard.Extensions.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Extensions.IsEmpty">
+            <summary>
+            Determines whether this instance is empty.
+            </summary>
+            <returns><c>true</c> if this instance is empty; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Extensions.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Extensions">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Extensions"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Group">
+            <summary>
+            Class Group.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Agent" />
+        </member>
+        <member name="F:TinCan.Standard.Group.OBJECT_TYPE">
+            <summary>
+            The object type
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Group.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Group"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Group.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Group"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Group.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Group"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Group.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="P:TinCan.Standard.Group.Member">
+            <summary>
+            Gets or sets the member.
+            </summary>
+            <value>The member.</value>
+        </member>
+        <member name="M:TinCan.Standard.Group.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Group.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Group">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Group"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.ILRS">
+            <summary>
+                Interface ILRS
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.About">
+            <summary>
+                Abouts this instance.
+            </summary>
+            <returns>AboutLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.AboutAsync">
+            <summary>
+                Abouts this instance.
+            </summary>
+            <returns>AboutLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveStatement(TinCan.Standard.Statement)">
+            <summary>
+                Saves the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveStatementAsync(TinCan.Standard.Statement)">
+            <summary>
+                Saves the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.VoidStatement(System.Guid,TinCan.Standard.Agent)">
+            <summary>
+                Voids the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.VoidStatementAsync(System.Guid,TinCan.Standard.Agent)">
+            <summary>
+                Voids the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveStatements(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+                Saves the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveStatementsAsync(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+                Saves the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveStatement(System.Guid)">
+            <summary>
+                Retrieves the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveStatementAsync(System.Guid)">
+            <summary>
+                Retrieves the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveVoidedStatement(System.Guid)">
+            <summary>
+                Retrieves the voided statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveVoidedStatementAsync(System.Guid)">
+            <summary>
+                Retrieves the voided statement asynchronous.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Task&lt;StatementLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.QueryStatements(TinCan.Standard.StatementsQuery)">
+            <summary>
+                Queries the statements.
+            </summary>
+            <param name="query">The query.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.QueryStatementsAsync(TinCan.Standard.StatementsQuery)">
+            <summary>
+                Queries the statements asynchronous.
+            </summary>
+            <param name="query">The query.</param>
+            <returns>Task&lt;StatementsResultLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.MoreStatements(TinCan.Standard.StatementsResult)">
+            <summary>
+                Mores the statements.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.MoreStatementsAsync(TinCan.Standard.StatementsResult)">
+            <summary>
+                Mores the statements asynchronous.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>Task&lt;StatementsResultLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveStateIds(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveStateIdsAsync(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state ids asynchronous.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>Task&lt;ProfileKeysLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveState(System.String,TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>StateLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveStateAsync(System.String,TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state asynchronous.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>Task&lt;StateLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveState(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Saves the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveStateAsync(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Saves the state asynchronous.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteState(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Deletes the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteStateAsync(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Deletes the state asynchronous.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.ClearState(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Clears the state.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.ClearStateAsync(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Clears the state asynchronous.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveActivityProfileIds(TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveActivityProfileIdsAsync(TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile ids asynchronous.
+            </summary>
+            <param name="activity">The activity.</param>
+            <returns>Task&lt;ProfileKeysLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveActivityProfile(System.String,TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <returns>ActivityProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveActivityProfileAsync(System.String,TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile asynchronous.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <returns>Task&lt;ActivityProfileLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveActivityProfile(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Saves the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveActivityProfileAsync(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Saves the activity profile asynchronous.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteActivityProfile(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Deletes the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteActivityProfileAsync(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Deletes the activity profile asynchronous.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveAgentProfileIds(TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile ids.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveAgentProfileIdsAsync(TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile ids asynchronous.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>Task&lt;ProfileKeysLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveAgentProfile(System.String,TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>AgentProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.RetrieveAgentProfileAsync(System.String,TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile asynchronous.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>Task&lt;AgentProfileLRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveAgentProfile(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Saves the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.SaveAgentProfileAsync(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Saves the agent profile asynchronous.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteAgentProfile(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Deletes the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.ILRS.DeleteAgentProfileAsync(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Deletes the agent profile asynchronous.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="T:TinCan.Standard.IStatementTarget">
+            <summary>
+            Interface StatementTarget
+            </summary>
+        </member>
+        <member name="P:TinCan.Standard.IStatementTarget.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="M:TinCan.Standard.IStatementTarget.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Json.IJsonModel">
+            <summary>
+            Interface IJsonModel
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Json.IJsonModel.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.IJsonModel.ToJObject">
+            <summary>
+            To the j object.
+            </summary>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.IJsonModel.ToJSON(TinCan.Standard.TCAPIVersion,System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="version">The version.</param>
+            <param name="pretty">if set to <c>true</c> [pretty].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.IJsonModel.ToJSON(System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="pretty">if set to <c>true</c> [pretty].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Json.JsonModel">
+            <summary>
+            Class JsonModel.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.IJsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.Json.JsonModel.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.JsonModel.ToJObject">
+            <summary>
+            To the j object.
+            </summary>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.JsonModel.ToJSON(TinCan.Standard.TCAPIVersion,System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="version">The version.</param>
+            <param name="pretty">if set to <c>true</c> [pretty].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.JsonModel.ToJSON(System.Boolean)">
+            <summary>
+            To the json.
+            </summary>
+            <param name="pretty">if set to <c>true</c> [pretty].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Json.StringOfJSON">
+            <summary>
+            Class StringOfJSON.
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.Json.StringOfJSON.source">
+            <summary>
+            The source
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Json.StringOfJSON.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Json.StringOfJSON"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Json.StringOfJSON.toJObject">
+            <summary>
+            To the j object.
+            </summary>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Json.StringOfJSON.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:TinCan.Standard.LanguageMap">
+            <summary>
+            Class LanguageMap.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="F:TinCan.Standard.LanguageMap._map">
+            <summary>
+            The map
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.LanguageMap"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.LanguageMap"/> class.
+            </summary>
+            <param name="map">The map.</param>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.LanguageMap"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.LanguageMap"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.IsEmpty">
+            <summary>
+            Determines whether this instance is empty.
+            </summary>
+            <returns><c>true</c> if this instance is empty; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.Add(System.String,System.String)">
+            <summary>
+            Adds the specified language.
+            </summary>
+            <param name="lang">The language.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:TinCan.Standard.LanguageMap.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.LanguageMap">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.LanguageMap"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.AboutLRSResponse">
+            <summary>
+            Class AboutLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.AboutLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.ActivityProfileLRSResponse">
+            <summary>
+            Class ActivityProfileLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.ActivityProfileLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.AgentProfileLRSResponse">
+            <summary>
+            Class AgentProfileLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.AgentProfileLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.LRSResponse">
+            <summary>
+            Class LRSResponse.
+            </summary>
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.LRSResponse.Success">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:TinCan.Standard.LRSResponses.LRSResponse"/> is success.
+            </summary>
+            <value><c>true</c> if success; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.LRSResponse.HttpException">
+            <summary>
+            Gets or sets the HTTP exception.
+            </summary>
+            <value>The HTTP exception.</value>
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.LRSResponse.ErrMsg">
+            <summary>
+            Gets or sets the error MSG.
+            </summary>
+            <value>The error MSG.</value>
+        </member>
+        <member name="M:TinCan.Standard.LRSResponses.LRSResponse.SetErrMsgFromBytes(System.Byte[])">
+            <summary>
+            Sets the error MSG from bytes.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.ProfileKeysLRSResponse">
+            <summary>
+            Class ProfileKeysLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.ProfileKeysLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.StateLRSResponse">
+            <summary>
+            Class StateLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.StateLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.StatementLRSResponse">
+            <summary>
+            Class StatementLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.StatementLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.LRSResponses.StatementsResultLRSResponse">
+            <summary>
+            Class StatementsResultLRSResponse.
+            </summary>
+            <seealso cref="T:TinCan.Standard.LRSResponses.LRSResponse" />
+        </member>
+        <member name="P:TinCan.Standard.LRSResponses.StatementsResultLRSResponse.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.RemoteLRS">
+            <summary>
+                Class RemoteLRS.
+            </summary>
+            <seealso cref="T:TinCan.Standard.ILRS" />
+            <seealso cref="T:TinCan.Standard.ILRS" />
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS" /> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.#ctor(System.Uri,TinCan.Standard.TCAPIVersion,System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS" /> class.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="version">The version.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.#ctor(System.String,TinCan.Standard.TCAPIVersion,System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS" /> class.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="version">The version.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.#ctor(System.String,System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS" /> class.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.Endpoint">
+            <summary>
+                Gets or sets the endpoint.
+            </summary>
+            <value>The endpoint.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.Version">
+            <summary>
+                Gets or sets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.Auth">
+            <summary>
+                Gets or sets the authentication.
+            </summary>
+            <value>The authentication.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.Extended">
+            <summary>
+                Gets or sets the extended.
+            </summary>
+            <value>The extended.</value>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.About">
+            <summary>
+                Abouts this instance.
+            </summary>
+            <returns>AboutLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveStatement(TinCan.Standard.Statement)">
+            <summary>
+                Saves the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.VoidStatement(System.Guid,TinCan.Standard.Agent)">
+            <summary>
+                Voids the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveStatements(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+                Saves the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveStatement(System.Guid)">
+            <summary>
+                Retrieves the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveVoidedStatement(System.Guid)">
+            <summary>
+                Retrieves the voided statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.QueryStatements(TinCan.Standard.StatementsQuery)">
+            <summary>
+                Queries the statements.
+            </summary>
+            <param name="query">The query.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MoreStatements(TinCan.Standard.StatementsResult)">
+            <summary>
+                Mores the statements.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveStateIds(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveState(System.String,TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>StateLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveState(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Saves the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteState(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Deletes the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.ClearState(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Clears the state.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveActivityProfileIds(TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveActivityProfile(System.String,TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <returns>ActivityProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveActivityProfile(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Saves the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteActivityProfile(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Deletes the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveAgentProfileIds(TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile ids.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveAgentProfile(System.String,TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>AgentProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveAgentProfile(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Saves the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteAgentProfile(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Deletes the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.AboutAsync">
+            <summary>
+                Abouts this instance.
+            </summary>
+            <returns>AboutLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveStatementAsync(TinCan.Standard.Statement)">
+            <summary>
+                Saves the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.VoidStatementAsync(System.Guid,TinCan.Standard.Agent)">
+            <summary>
+                Voids the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveStatementsAsync(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+                Saves the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveStatementAsync(System.Guid)">
+            <summary>
+                Retrieves the statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveVoidedStatementAsync(System.Guid)">
+            <summary>
+                Retrieves the voided statement.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.QueryStatementsAsync(TinCan.Standard.StatementsQuery)">
+            <summary>
+                Queries the statements.
+            </summary>
+            <param name="query">The query.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MoreStatementsAsync(TinCan.Standard.StatementsResult)">
+            <summary>
+                Mores the statements.
+            </summary>
+            <param name="result">The result.</param>
+            <returns>StatementsResultLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveStateIdsAsync(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveStateAsync(System.String,TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Retrieves the state.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>StateLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveStateAsync(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Saves the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteStateAsync(TinCan.Standard.Documents.StateDocument)">
+            <summary>
+                Deletes the state.
+            </summary>
+            <param name="state">The state.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.ClearStateAsync(TinCan.Standard.Activity,TinCan.Standard.Agent,System.Nullable{System.Guid})">
+            <summary>
+                Clears the state.
+            </summary>
+            <param name="activity">The activity.</param>
+            <param name="agent">The agent.</param>
+            <param name="registration">The registration.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveActivityProfileIdsAsync(TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile ids.
+            </summary>
+            <param name="activity">The activity.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveActivityProfileAsync(System.String,TinCan.Standard.Activity)">
+            <summary>
+                Retrieves the activity profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="activity">The activity.</param>
+            <returns>ActivityProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveActivityProfileAsync(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Saves the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteActivityProfileAsync(TinCan.Standard.Documents.ActivityProfileDocument)">
+            <summary>
+                Deletes the activity profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveAgentProfileIdsAsync(TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile ids.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.RetrieveAgentProfileAsync(System.String,TinCan.Standard.Agent)">
+            <summary>
+                Retrieves the agent profile.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="agent">The agent.</param>
+            <returns>AgentProfileLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveAgentProfileAsync(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Saves the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteAgentProfileAsync(TinCan.Standard.Documents.AgentProfileDocument)">
+            <summary>
+                Deletes the agent profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteDocument(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Deletes the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.DeleteDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Deletes the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetDocument(System.String,System.Collections.Generic.Dictionary{System.String,System.String},TinCan.Standard.Documents.Document)">
+            <summary>
+                Gets the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <param name="document">The document.</param>
+            <returns>MyHTTPResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},TinCan.Standard.Documents.Document)">
+            <summary>
+                Gets the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <param name="document">The document.</param>
+            <returns>MyHTTPResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetProfileKeys(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Gets the profile keys.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetProfileKeysAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Gets the profile keys.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <returns>ProfileKeysLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetStatement(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Gets the statement.
+            </summary>
+            <param name="queryParams">The query parameters.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.GetStatementAsync(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Gets the statement.
+            </summary>
+            <param name="queryParams">The query parameters.</param>
+            <returns>StatementLRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MakeAsyncRequest(TinCan.Standard.RemoteLRS.MyHttpRequest)">
+            <summary>
+                Makes the synchronize request.
+            </summary>
+            <param name="req">The req.</param>
+            <returns>MyHTTPResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MakeSyncRequest(TinCan.Standard.RemoteLRS.MyHttpRequest)">
+            <summary>
+                Makes the synchronize request.
+            </summary>
+            <param name="req">The req.</param>
+            <returns>MyHTTPResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.ReadFully(System.IO.Stream,System.Int32)">
+            <summary>
+                See http://www.yoda.arachsys.com/csharp/readbinary.html no license found
+                Reads data from a stream until the end is reached. The
+                data is returned as a byte array. An IOException is
+                thrown if any of the underlying IO calls fail.
+            </summary>
+            <param name="stream">The stream to read data from</param>
+            <param name="initialLength">The initial buffer length</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveDocument(System.String,System.Collections.Generic.Dictionary{System.String,System.String},TinCan.Standard.Documents.Document)">
+            <summary>
+                Saves the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <param name="document">The document.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SaveDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},TinCan.Standard.Documents.Document)">
+            <summary>
+                Saves the document.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="queryParams">The query parameters.</param>
+            <param name="document">The document.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.SetAuth(System.String,System.String)">
+            <summary>
+                Sets the authentication.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="T:TinCan.Standard.RemoteLRS.MyHttpRequest">
+            <summary>
+                Class MyHTTPRequest.
+            </summary>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.Method">
+            <summary>
+                Gets or sets the method.
+            </summary>
+            <value>The method.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.Resource">
+            <summary>
+                Gets or sets the resource.
+            </summary>
+            <value>The resource.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.QueryParams">
+            <summary>
+                Gets or sets the query parameters.
+            </summary>
+            <value>The query parameters.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.Headers">
+            <summary>
+                Gets or sets the headers.
+            </summary>
+            <value>The headers.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.ContentType">
+            <summary>
+                Gets or sets the type of the content.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpRequest.Content">
+            <summary>
+                Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="T:TinCan.Standard.RemoteLRS.MyHttpResponse">
+            <summary>
+                Class MyHTTPResponse.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MyHttpResponse.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS.MyHttpResponse" /> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.RemoteLRS.MyHttpResponse.#ctor(System.Net.HttpWebResponse)">
+            <summary>
+                Initializes a new instance of the <see cref="T:TinCan.Standard.RemoteLRS.MyHttpResponse" /> class.
+            </summary>
+            <param name="webResp">The web resp.</param>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.Status">
+            <summary>
+                Gets or sets the status.
+            </summary>
+            <value>The status.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.ContentType">
+            <summary>
+                Gets or sets the type of the content.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.Content">
+            <summary>
+                Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.LastModified">
+            <summary>
+                Gets or sets the last modified.
+            </summary>
+            <value>The last modified.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.Etag">
+            <summary>
+                Gets or sets the etag.
+            </summary>
+            <value>The etag.</value>
+        </member>
+        <member name="P:TinCan.Standard.RemoteLRS.MyHttpResponse.Ex">
+            <summary>
+                Gets or sets the ex.
+            </summary>
+            <value>The ex.</value>
+        </member>
+        <member name="T:TinCan.Standard.Result">
+            <summary>
+            Class Result.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.Result.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Result"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Result.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Result"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Result.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Result"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Result.Completion">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:TinCan.Standard.Result"/> is completion.
+            </summary>
+            <value><c>null</c> if [completion] contains no value, <c>true</c> if [completion]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TinCan.Standard.Result.Success">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:TinCan.Standard.Result"/> is success.
+            </summary>
+            <value><c>null</c> if [success] contains no value, <c>true</c> if [success]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TinCan.Standard.Result.Response">
+            <summary>
+            Gets or sets the response.
+            </summary>
+            <value>The response.</value>
+        </member>
+        <member name="P:TinCan.Standard.Result.Duration">
+            <summary>
+            Gets or sets the duration.
+            </summary>
+            <value>The duration.</value>
+        </member>
+        <member name="P:TinCan.Standard.Result.Score">
+            <summary>
+            Gets or sets the score.
+            </summary>
+            <value>The score.</value>
+        </member>
+        <member name="P:TinCan.Standard.Result.Extensions">
+            <summary>
+            Gets or sets the extensions.
+            </summary>
+            <value>The extensions.</value>
+        </member>
+        <member name="M:TinCan.Standard.Result.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Result.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Result">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Result"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Score">
+            <summary>
+            Class Score.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.Score.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Score" /> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Score.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Score"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Score.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Score"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Score.Scaled">
+            <summary>
+            Gets or sets the scaled.
+            </summary>
+            <value>The scaled.</value>
+        </member>
+        <member name="P:TinCan.Standard.Score.Raw">
+            <summary>
+            Gets or sets the raw.
+            </summary>
+            <value>The raw.</value>
+        </member>
+        <member name="P:TinCan.Standard.Score.Min">
+            <summary>
+            Gets or sets the minimum.
+            </summary>
+            <value>The minimum.</value>
+        </member>
+        <member name="P:TinCan.Standard.Score.Max">
+            <summary>
+            Gets or sets the maximum.
+            </summary>
+            <value>The maximum.</value>
+        </member>
+        <member name="M:TinCan.Standard.Score.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Score.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Score">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Score"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Statement">
+            <summary>
+            Class Statement.
+            </summary>
+            <seealso cref="T:TinCan.Standard.StatementBase" />
+        </member>
+        <member name="F:TinCan.Standard.Statement.ISO_DATE_TIME_FORMAT">
+            <summary>
+            The iso date time format
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Statement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Statement" /> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Statement.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Statement"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Statement.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Statement"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.Statement.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.Statement.Stored">
+            <summary>
+            Gets or sets the stored.
+            </summary>
+            <value>The stored.</value>
+        </member>
+        <member name="P:TinCan.Standard.Statement.Authority">
+            <summary>
+            Gets or sets the authority.
+            </summary>
+            <value>The authority.</value>
+        </member>
+        <member name="P:TinCan.Standard.Statement.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="M:TinCan.Standard.Statement.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Statement.Stamp">
+            <summary>
+            Stamps this instance.
+            </summary>
+        </member>
+        <member name="T:TinCan.Standard.StatementBase">
+            <summary>
+            Class StatementBase.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="F:TinCan.Standard.StatementBase.ISO_DATE_TIME_FORMAT">
+            <summary>
+            The iso date time format
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementBase"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementBase.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementBase"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementBase.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementBase"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Actor">
+            <summary>
+            Gets or sets the actor.
+            </summary>
+            <value>The actor.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Verb">
+            <summary>
+            Gets or sets the verb.
+            </summary>
+            <value>The verb.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Target">
+            <summary>
+            Gets or sets the target.
+            </summary>
+            <value>The target.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Result">
+            <summary>
+            Gets or sets the result.
+            </summary>
+            <value>The result.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Context">
+            <summary>
+            Gets or sets the context.
+            </summary>
+            <value>The context.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementBase.Timestamp">
+            <summary>
+            Gets or sets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="M:TinCan.Standard.StatementBase.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="T:TinCan.Standard.StatementRef">
+            <summary>
+            Class StatementRef.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+            <seealso cref="T:TinCan.Standard.IStatementTarget" />
+        </member>
+        <member name="F:TinCan.Standard.StatementRef.OBJECT_TYPE">
+            <summary>
+            The object type
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementRef"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementRef"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementRef"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementRef"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.StatementRef.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementRef.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.StatementRef.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.StatementRef">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.StatementRef"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.StatementsQuery">
+            <summary>
+            Class StatementsQuery.
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQuery.ISO_DATE_TIME_FORMAT">
+            <summary>
+            The iso date time format
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQuery._activityId">
+            <summary>
+            The activity identifier
+            </summary>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Agent">
+            <summary>
+            Gets or sets the agent.
+            </summary>
+            <value>The agent.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.VerbId">
+            <summary>
+            Gets or sets the verb identifier.
+            </summary>
+            <value>The verb identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.ActivityId">
+            <summary>
+            Gets or sets the activity identifier.
+            </summary>
+            <value>The activity identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Registration">
+            <summary>
+            Gets or sets the registration.
+            </summary>
+            <value>The registration.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.RelatedActivities">
+            <summary>
+            Gets or sets a value indicating whether [related activities].
+            </summary>
+            <value><c>null</c> if [related activities] contains no value, <c>true</c> if [related activities]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.RelatedAgents">
+            <summary>
+            Gets or sets a value indicating whether [related agents].
+            </summary>
+            <value><c>null</c> if [related agents] contains no value, <c>true</c> if [related agents]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Since">
+            <summary>
+            Gets or sets the since.
+            </summary>
+            <value>The since.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Until">
+            <summary>
+            Gets or sets the until.
+            </summary>
+            <value>The until.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Limit">
+            <summary>
+            Gets or sets the limit.
+            </summary>
+            <value>The limit.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Format">
+            <summary>
+            Gets or sets the format.
+            </summary>
+            <value>The format.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsQuery.Ascending">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:TinCan.Standard.StatementsQuery"/> is ascending.
+            </summary>
+            <value><c>null</c> if [ascending] contains no value, <c>true</c> if [ascending]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:TinCan.Standard.StatementsQuery.ToParameterMap(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the parameter map.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="T:TinCan.Standard.StatementsQueryResultFormat">
+            <summary>
+            Class StatementsQueryResultFormat. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQueryResultFormat.IDS">
+            <summary>
+            The ids
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQueryResultFormat.EXACT">
+            <summary>
+            The exact
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQueryResultFormat.CANONICAL">
+            <summary>
+            The canonical
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.StatementsQueryResultFormat._text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementsQueryResultFormat.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsQueryResultFormat"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementsQueryResultFormat.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:TinCan.Standard.StatementsResult">
+            <summary>
+            Class StatementsResult.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementsResult.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsResult"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.StatementsResult.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsResult"/> class.
+            </summary>
+            <param name="str">The string.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementsResult.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsResult"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementsResult.#ctor(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsResult"/> class.
+            </summary>
+            <param name="statements">The statements.</param>
+        </member>
+        <member name="M:TinCan.Standard.StatementsResult.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.StatementsResult"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.StatementsResult.Statements">
+            <summary>
+            Gets or sets the statements.
+            </summary>
+            <value>The statements.</value>
+        </member>
+        <member name="P:TinCan.Standard.StatementsResult.More">
+            <summary>
+            Gets or sets the more.
+            </summary>
+            <value>The more.</value>
+        </member>
+        <member name="T:TinCan.Standard.SubStatement">
+            <summary>
+            Class SubStatement.
+            </summary>
+            <seealso cref="T:TinCan.Standard.StatementBase" />
+            <seealso cref="T:TinCan.Standard.IStatementTarget" />
+        </member>
+        <member name="F:TinCan.Standard.SubStatement.OBJECT_TYPE">
+            <summary>
+            The object type
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.SubStatement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.SubStatement"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.SubStatement.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.SubStatement"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.SubStatement.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.SubStatement"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="P:TinCan.Standard.SubStatement.ObjectType">
+            <summary>
+            Gets the type of the object.
+            </summary>
+            <value>The type of the object.</value>
+        </member>
+        <member name="M:TinCan.Standard.SubStatement.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.SubStatement.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.SubStatement">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.SubStatement"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:TinCan.Standard.TCAPIVersion">
+            <summary>
+            Class TCAPIVersion. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V103">
+            <summary>
+            The V103
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V102">
+            <summary>
+            The V102
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V101">
+            <summary>
+            The V101
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V100">
+            <summary>
+            The V100
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V095">
+            <summary>
+            The V095
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion.V090">
+            <summary>
+            The V090
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion._known">
+            <summary>
+            The known
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion._supported">
+            <summary>
+            The supported
+            </summary>
+        </member>
+        <member name="F:TinCan.Standard.TCAPIVersion._text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.TCAPIVersion"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.Latest">
+            <summary>
+            Latests this instance.
+            </summary>
+            <returns>TCAPIVersion.</returns>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.GetKnown">
+            <summary>
+            Gets the known.
+            </summary>
+            <returns>Dictionary&lt;System.String, TCAPIVersion&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.GetSupported">
+            <summary>
+            Gets the supported.
+            </summary>
+            <returns>Dictionary&lt;System.String, TCAPIVersion&gt;.</returns>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.op_Explicit(System.String)~TinCan.Standard.TCAPIVersion">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.String"/> to <see cref="T:TinCan.Standard.TCAPIVersion"/>.
+            </summary>
+            <param name="vStr">The v string.</param>
+            <returns>The result of the conversion.</returns>
+            <exception cref="T:System.ArgumentException">Unrecognized version: " + vStr</exception>
+        </member>
+        <member name="M:TinCan.Standard.TCAPIVersion.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:TinCan.Standard.Verb">
+            <summary>
+            Class Verb.
+            </summary>
+            <seealso cref="T:TinCan.Standard.Json.JsonModel" />
+        </member>
+        <member name="M:TinCan.Standard.Verb.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Verb"/> class.
+            </summary>
+        </member>
+        <member name="M:TinCan.Standard.Verb.#ctor(TinCan.Standard.Json.StringOfJSON)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Verb"/> class.
+            </summary>
+            <param name="json">The json.</param>
+        </member>
+        <member name="M:TinCan.Standard.Verb.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Verb"/> class.
+            </summary>
+            <param name="jobj">The jobj.</param>
+        </member>
+        <member name="M:TinCan.Standard.Verb.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Verb"/> class.
+            </summary>
+            <param name="uri">The URI.</param>
+        </member>
+        <member name="M:TinCan.Standard.Verb.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.Standard.Verb"/> class.
+            </summary>
+            <param name="str">The string.</param>
+        </member>
+        <member name="P:TinCan.Standard.Verb.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:TinCan.Standard.Verb.Display">
+            <summary>
+            Gets or sets the display.
+            </summary>
+            <value>The display.</value>
+        </member>
+        <member name="M:TinCan.Standard.Verb.ToJObject(TinCan.Standard.TCAPIVersion)">
+            <summary>
+            To the j object.
+            </summary>
+            <param name="version">The version.</param>
+            <returns>JObject.</returns>
+        </member>
+        <member name="M:TinCan.Standard.Verb.op_Explicit(Newtonsoft.Json.Linq.JObject)~TinCan.Standard.Verb">
+            <summary>
+            Performs an explicit conversion from <see cref="T:Newtonsoft.Json.Linq.JObject"/> to <see cref="T:TinCan.Standard.Verb"/>.
+            </summary>
+            <param name="jobj">The jobj.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+    </members>
+</doc>

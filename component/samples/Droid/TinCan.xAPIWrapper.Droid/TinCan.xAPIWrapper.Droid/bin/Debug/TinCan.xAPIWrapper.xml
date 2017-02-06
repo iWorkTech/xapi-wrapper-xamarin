@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TinCan.xAPIWrapper</name>
+    </assembly>
+    <members>
+        <member name="T:TinCan.xAPIWrapper.IXAPIWrapper">
+            <summary>
+                Interface IxAPIWrapper
+            </summary>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.About">
+            <summary>
+                Abouts this instance.
+            </summary>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.ChangeConfig(System.String,System.String,System.String)">
+            <summary>
+                Changes the configuration.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.PrepareStatement(TinCan.Standard.Agent,TinCan.Standard.Verb,TinCan.Standard.IStatementTarget)">
+            <summary>
+                Prepares the statement.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="verb">The verb.</param>
+            <param name="target">The object.</param>
+            <returns>Statement.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.PrepareStatement(System.String,System.String,System.String)">
+            <summary>
+                Prepares the statement.
+            </summary>
+            <param name="agentEmail"></param>
+            <param name="verb">The verb.</param>
+            <param name="activityType"></param>
+            <returns>Statement.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.SendStatement(TinCan.Standard.Statement)">
+            <summary>
+                Sends the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.SendStatements(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+                Sends the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetStatements(TinCan.Standard.StatementsQuery)">
+            <summary>
+                Gets the statements.
+            </summary>
+            <param name="searchParams">The search parameters.</param>
+            <returns>List&lt;Statement&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetStatements(System.DateTime,System.Int32)">
+            <summary>
+                Gets the statements.
+            </summary>
+            <param name="since"></param>
+            <param name="limit"></param>
+            <returns>List&lt;Statement&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetActivity(System.String,TinCan.Standard.Activity)">
+            <summary>
+            Gets the activities.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="activity">The activity.</param>
+            <returns>List&lt;Activity&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.SendState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+                Sends the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>LRSResponse.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+                Gets the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.DeleteState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+                Deletes the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.SendActivityProfile(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+                Sends the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="profilEval">The profil eval.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetActivityProfile(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+                Gets the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="since">The since.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.DeleteActivityProfile(System.String,System.String,System.String,System.String)">
+            <summary>
+                Deletes the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetAgent(TinCan.Standard.Agent)">
+            <summary>
+                Gets the agents.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.SendAgentProfile(TinCan.Standard.Agent,System.String,System.String,System.String,System.String)">
+            <summary>
+                Sends the agent profile.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="profilEval">The profil eval.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.GetAgentProfile(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+                Gets the agent profile.
+            </summary>
+            <param name="agentId">The agent identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="since">The since.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.IXAPIWrapper.DeleteAgentProfile(TinCan.Standard.Agent,System.String,System.String,System.String)">
+            <summary>
+                Deletes the agent profile.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="T:TinCan.xAPIWrapper.APIWrapper">
+            <summary>
+            Class xAPIWrapper. - Test
+            </summary>
+            <seealso cref="T:TinCan.xAPIWrapper.IXAPIWrapper" />
+            <seealso cref="T:TinCan.xAPIWrapper.IXAPIWrapper" />
+            <seealso cref="T:TinCan.xAPIWrapper.IXAPIWrapper" />
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="F:TinCan.xAPIWrapper.APIWrapper._lrs">
+            <summary>
+            The LRS
+            </summary>
+        </member>
+        <member name="F:TinCan.xAPIWrapper.APIWrapper._username">
+            <summary>
+            The username
+            </summary>
+        </member>
+        <member name="F:TinCan.xAPIWrapper.APIWrapper._password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="F:TinCan.xAPIWrapper.APIWrapper._endpoint">
+            <summary>
+            The endpoint
+            </summary>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TinCan.xAPIWrapper.APIWrapper" /> class.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.System#IDisposable#Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.Init(System.String,System.String,System.String)">
+            <summary>
+            Initializes this instance.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.About">
+            <summary>
+            Abouts this instance.
+            </summary>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.ChangeConfig(System.String,System.String,System.String)">
+            <summary>
+            Changes the configuration.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.PrepareStatement(TinCan.Standard.Agent,TinCan.Standard.Verb,TinCan.Standard.IStatementTarget)">
+            <summary>
+            Prepares the statement.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="verb">The verb.</param>
+            <param name="target">The target.</param>
+            <returns>Statement.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.PrepareStatement(System.String,System.String,System.String)">
+            <summary>
+            Prepares the statement.
+            </summary>
+            <param name="agentEmail">The agent.</param>
+            <param name="verb">The verb.</param>
+            <param name="activityType">The target.</param>
+            <returns>Statement.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendStatement(TinCan.Standard.Statement)">
+            <summary>
+            Sends the statement.
+            </summary>
+            <param name="statement">The statement.</param>
+            <returns>LRSResponse.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendStatement(TinCan.Standard.Agent,TinCan.Standard.Verb,TinCan.Standard.IStatementTarget)">
+            <summary>
+            Sends the statement.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="verb">The verb.</param>
+            <param name="target">The target.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendStatements(System.Collections.Generic.List{TinCan.Standard.Statement})">
+            <summary>
+            Sends the statements.
+            </summary>
+            <param name="statements">The statements.</param>
+            <returns>LRSResponse.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetStatements(TinCan.Standard.StatementsQuery)">
+            <summary>
+            Gets the statements.
+            </summary>
+            <param name="searchParams">The search parameters.</param>
+            <returns>List&lt;Statement&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetStatements(System.DateTime,System.Int32)">
+            <summary>
+            Gets the statements.
+            </summary>
+            <param name="since">Since a particular date</param>
+            <param name="limit">Limit or size of the resultset</param>
+            <returns>List&lt;Statement&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetActivity(System.String,TinCan.Standard.Activity)">
+            <summary>
+            Gets the activities.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <returns>List&lt;Activity&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+            Sends the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>LRSResponse.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+            Gets the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.DeleteState(System.String,TinCan.Standard.Agent,System.String,System.Nullable{System.Guid},System.String,System.String,System.String)">
+            <summary>
+            Deletes the state.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="agent">The agent.</param>
+            <param name="stateId">The state identifier.</param>
+            <param name="registration">The registration.</param>
+            <param name="stateVal">The state value.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendActivityProfile(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="profilEval">The profil eval.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetActivityProfile(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            Gets the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="since">The since.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.DeleteActivityProfile(System.String,System.String,System.String,System.String)">
+            <summary>
+            Deletes the activity profile.
+            </summary>
+            <param name="activityId">The activity identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetAgent(TinCan.Standard.Agent)">
+            <summary>
+            Gets the agents.
+            </summary>
+            <param name="agent">The agent.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.SendAgentProfile(TinCan.Standard.Agent,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends the agent profile.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="profilEval">The profil eval.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.GetAgentProfile(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            Gets the agent profile.
+            </summary>
+            <param name="agentId">The agent identifier.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="since">The since.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.DeleteAgentProfile(TinCan.Standard.Agent,System.String,System.String,System.String)">
+            <summary>
+            Deletes the agent profile.
+            </summary>
+            <param name="agent">The agent.</param>
+            <param name="profileId">The profile identifier.</param>
+            <param name="matchHash">The match hash.</param>
+            <param name="noneMatchHash">The none match hash.</param>
+            <returns>Task&lt;LRSResponse&gt;.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:TinCan.xAPIWrapper.APIWrapper.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+    </members>
+</doc>

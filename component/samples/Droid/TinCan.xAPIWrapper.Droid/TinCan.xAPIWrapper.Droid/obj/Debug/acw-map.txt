@@ -1,0 +1,4 @@
+TinCan.xAPIWrapper.Droid.MainActivity, TinCan.xAPIWrapper.Droid;md5fadb681ad31c3053abde6e467ca90531.MainActivity
+TinCan.xAPIWrapper.Droid.MainActivity, TinCan.xAPIWrapper.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fadb681ad31c3053abde6e467ca90531.MainActivity
+TinCan.xAPIWrapper.Droid.MainActivity;md5fadb681ad31c3053abde6e467ca90531.MainActivity
+tincan.xapiwrapper.droid.MainActivity;md5fadb681ad31c3053abde6e467ca90531.MainActivity
