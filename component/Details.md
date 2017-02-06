@@ -1,4 +1,4 @@
-# xAPIWrapper Xamarin Component 
+# xAPIWrapper Component 
 ### A Xamarin Component for interfacing with any Learning Record Store (LRS)
 - **ver v1.0.0 Beta
 - For more information on xAPI/TINCAN refer to this site [ADL](https://www.adlnet.gov/adl-research/performance-tracking-analysis/experience-api/)

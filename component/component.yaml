@@ -26,7 +26,7 @@ samples:
     nobuild: "true"
     configuration: Release|Any CPU
 id: xAPIWrapper
-summary: Allows user to capture user experience and analyse it.
+summary: Allows apps to capture user experiences and interface with any Learning Record Store compliant witht the TINCAN Standard Specification.
 publisher-url: http://www.iworktech.com
 license: License.md
 screenshots: 
