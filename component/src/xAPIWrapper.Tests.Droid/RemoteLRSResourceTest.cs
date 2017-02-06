@@ -28,11 +28,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using TinCan.Standard;
 using TinCan.Standard.Documents;
 
 #endregion
 
-namespace TinCan.Standard.Tests
+namespace xAPIWrapper.Tests.Droid
 {
     //// <summary>
     /// Class RemoteLRSResourceTest.
@@ -54,6 +55,7 @@ namespace TinCan.Standard.Tests
             // results of the test suite then supply your own endpoint, username, and password
             //
             _lrs = new RemoteLRS(
+                //"https://cloud.scorm.com/tc/U2S4SI5FY0/sandbox/",
                 "https://lrs.adlnet.gov/xAPI/",
                 "Nja986GYE1_XrWMmFUE",
                 "Bd9lDr1kjaWWY6RID_4"
@@ -82,7 +84,9 @@ namespace TinCan.Standard.Tests
         public void TestAboutFailure()
         {
             //_lrs.Endpoint = new Uri("http://cloud.scorm.com/tc/3TQLAI9/sandbox/");
+
             _lrs.Endpoint = new Uri("https://lrs.adlnet.gov/xAPI/");
+
 
             var lrsRes = _lrs.About();
             Assert.IsFalse(lrsRes.Success);

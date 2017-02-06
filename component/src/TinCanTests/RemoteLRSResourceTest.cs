@@ -55,7 +55,7 @@ namespace TinCanTests
             // results of the test suite then supply your own endpoint, username, and password
             //
             _lrs = new RemoteLRS(
-                "https://cloud.scorm.com/tc/U2S4SI5FY0/sandbox/",
+                "https://lrs.adlnet.gov/xAPI/",
                 "Nja986GYE1_XrWMmFUE",
                 "Bd9lDr1kjaWWY6RID_4"
                 );
@@ -88,7 +88,7 @@ namespace TinCanTests
         [Test]
         public void TestAboutFailure()
         {
-            _lrs.Endpoint = new Uri("http://cloud.scorm.com/tc/3TQLAI9/sandbox/");
+            _lrs.Endpoint = new Uri("https://lrs.adlnet.gov/xAPI/");
 
             var lrsRes = _lrs.About();
             Assert.IsFalse(lrsRes.Success);
