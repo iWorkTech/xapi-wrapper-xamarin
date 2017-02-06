@@ -52,6 +52,12 @@
     <Compile Include="Support.cs" />
     <Compile Include="VerbTest.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TinCan.Standard\TinCan.Standard.csproj">
+      <Project>{e391bce1-0748-4660-b8a6-3f94476322e2}</Project>
+      <Name>TinCan.Standard</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
