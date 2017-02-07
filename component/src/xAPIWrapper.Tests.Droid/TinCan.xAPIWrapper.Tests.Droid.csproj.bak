@@ -126,12 +126,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivityTest.cs" />
+    <Compile Include="AgentTest.cs" />
+    <Compile Include="LanguageMapTest.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="RemoteLRSResourceTest.cs" />
+    <Compile Include="RemoteLRSTest.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultTest.cs" />
+    <Compile Include="StatementTest.cs" />
+    <Compile Include="SubStatementTest.cs" />
     <Compile Include="Support.cs" />
     <Compile Include="TestClass.cs" />
+    <Compile Include="VerbTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

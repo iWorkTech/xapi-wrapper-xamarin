@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\component",
+    "\\component\\samples",
+    "\\component\\samples\\Droid\\TinCan.xAPIWrapper.Droid",
+    "\\component\\samples\\iOS\\TinCan.xAPIWrapper.iOS",
+    "\\component\\samples\\iOS\\TinCan.xAPIWrapper.iOS\\TinCan.xAPIWrapper.iOS",
+    "\\component\\src",
+    "\\component\\src\\TinCan"
   ],
+  "SelectedNode": "\\component\\src\\xAPIWrapper.sln",
   "PreviewInSolutionExplorer": false
 }

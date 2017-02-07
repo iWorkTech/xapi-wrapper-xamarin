@@ -5300,20 +5300,20 @@
     ".NETStandard,Version=v1.6": []
   },
   "packageFolders": {
-    "C:\\Users\\ashedge\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\TinCan.Standard.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\TinCan.Standard.Tests.csproj",
       "projectName": "TinCan.Standard.Tests",
-      "projectPath": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\TinCan.Standard.Tests.csproj",
-      "projectJsonPath": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\project.json",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\TinCan.Standard.Tests.csproj",
+      "projectJsonPath": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard.Tests\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "netstandard1.6": {
           "projectReferences": {
-            "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj": {
-              "projectPath": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj"
+            "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj"
             }
           }
         }

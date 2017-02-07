@@ -4557,14 +4557,14 @@
     ".NETStandard,Version=v1.5": []
   },
   "packageFolders": {
-    "C:\\Users\\ashedge\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj",
       "projectName": "TinCan.Standard",
-      "projectPath": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj",
-      "projectJsonPath": "C:\\Users\\ashedge\\Source\\Repos\\xapi-wrapper-xamarin\\component\\src\\TinCan.Standard\\project.json",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard\\TinCan.Standard.csproj",
+      "projectJsonPath": "C:\\Users\\user\\Source\\Repos\\xAPIWrapper-xamarin\\component\\src\\TinCan.Standard\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
