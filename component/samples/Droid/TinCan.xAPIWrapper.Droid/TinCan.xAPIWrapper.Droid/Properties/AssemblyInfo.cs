@@ -7,12 +7,12 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TinCan.xAPIWrapper.Droid")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Sample Android App")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TinCan.xAPIWrapper.Droid")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("iWork Technologies LLC & Pvt. Ltd.")]
+[assembly: AssemblyProduct("SocialLRS, xAPIWrapper C#")]
+[assembly: AssemblyCopyright("iWork Technologies LLC & Pvt. Ltd.")]
+[assembly: AssemblyTrademark("SocialLRS, xAPIWrapper C#")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 

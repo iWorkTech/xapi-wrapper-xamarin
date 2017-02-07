@@ -55,7 +55,7 @@ namespace TinCanTests
             // results of the test suite then supply your own endpoint, username, and password
             //
             _lrs = new RemoteLRS(
-                "https://cloud.scorm.com/tc/U2S4SI5FY0/sandbox/",
+                "https://lrs.adlnet.gov/xAPI/",
                 "Nja986GYE1_XrWMmFUE",
                 "Bd9lDr1kjaWWY6RID_4"
                 );
@@ -88,7 +88,7 @@ namespace TinCanTests
         [Test]
         public void TestAboutFailure()
         {
-            _lrs.Endpoint = new Uri("http://cloud.scorm.com/tc/3TQLAI9/sandbox/");
+            _lrs.Endpoint = new Uri("https://lrs.adlnet.gov/");
 
             var lrsRes = _lrs.About();
             Assert.IsFalse(lrsRes.Success);
@@ -124,7 +124,7 @@ namespace TinCanTests
             var doc = new ActivityProfileDocument
             {
                 Activity = Support.Activity,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = _lrs.DeleteActivityProfile(doc);
@@ -140,7 +140,7 @@ namespace TinCanTests
             var doc = new ActivityProfileDocument
             {
                 Activity = Support.Activity,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = await _lrs.DeleteActivityProfileAsync(doc);
@@ -156,7 +156,7 @@ namespace TinCanTests
             var doc = new AgentProfileDocument
             {
                 Agent = Support.Agent,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = _lrs.DeleteAgentProfile(doc);
@@ -172,7 +172,7 @@ namespace TinCanTests
             var doc = new AgentProfileDocument
             {
                 Agent = Support.Agent,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = await _lrs.DeleteAgentProfileAsync(doc);
@@ -189,7 +189,7 @@ namespace TinCanTests
             {
                 Activity = Support.Activity,
                 Agent = Support.Agent,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = _lrs.DeleteState(doc);
@@ -206,7 +206,7 @@ namespace TinCanTests
             {
                 Activity = Support.Activity,
                 Agent = Support.Agent,
-                ID = "test"
+                ID = Guid.NewGuid().ToString()
             };
 
             var lrsRes = await _lrs.DeleteStateAsync(doc);
@@ -229,8 +229,9 @@ namespace TinCanTests
             if (queryRes.Success && queryRes.Content.More != null)
             {
                 var moreRes = _lrs.MoreStatements(queryRes.Content);
-                Assert.IsTrue(moreRes.Success);
-                Console.WriteLine("TestMoreStatements - statement count: " + moreRes.Content.Statements.Count);
+                Assert.IsTrue(queryRes.Success);
+                Assert.IsNotNull(moreRes);
+                Console.WriteLine("TestMoreStatements - statement count: " + queryRes.Content.Statements.Count);
             }
         }
 
@@ -250,8 +251,9 @@ namespace TinCanTests
             if (queryRes.Success && queryRes.Content.More != null)
             {
                 var moreRes = _lrs.MoreStatements(queryRes.Content);
-                Assert.IsTrue(moreRes.Success);
-                Console.WriteLine("TestMoreStatements - statement count: " + moreRes.Content.Statements.Count);
+                Assert.IsTrue(queryRes.Success);
+                Assert.IsNotNull(moreRes);
+                Console.WriteLine("TestMoreStatementsAsync - statement count: " + queryRes.Content.Statements.Count);
             }
         }
 
@@ -478,7 +480,7 @@ namespace TinCanTests
             var doc = new ActivityProfileDocument
             {
                 Activity = Support.Activity,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 
@@ -495,7 +497,7 @@ namespace TinCanTests
             var doc = new ActivityProfileDocument
             {
                 Activity = Support.Activity,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 
@@ -512,7 +514,7 @@ namespace TinCanTests
             var doc = new AgentProfileDocument
             {
                 Agent = Support.Agent,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 
@@ -529,7 +531,7 @@ namespace TinCanTests
             var doc = new AgentProfileDocument
             {
                 Agent = Support.Agent,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 
@@ -547,7 +549,7 @@ namespace TinCanTests
             {
                 Activity = Support.Activity,
                 Agent = Support.Agent,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 
@@ -565,7 +567,7 @@ namespace TinCanTests
             {
                 Activity = Support.Activity,
                 Agent = Support.Agent,
-                ID = "test",
+                ID = Guid.NewGuid().ToString(),
                 Content = Encoding.UTF8.GetBytes("Test value")
             };
 

@@ -62,7 +62,7 @@ namespace TinCan.xAPIWrapper
         /// <param name="password">The password.</param>
         public void Init(string endpoint, string username, string password)
         {
-            _endpoint = string.IsNullOrWhiteSpace(username) ? "https://cloud.scorm.com/tc/U2S4SI5FY0/sandbox/" : endpoint;
+            _endpoint = string.IsNullOrWhiteSpace(username) ? "https://lrs.adlnet.gov/xAPI/" : endpoint;
             _username = string.IsNullOrWhiteSpace(username) ? "Nja986GYE1_XrWMmFUE" : username;
             _password = string.IsNullOrWhiteSpace(password) ? "Bd9lDr1kjaWWY6RID_4" : password;
            
@@ -88,7 +88,7 @@ namespace TinCan.xAPIWrapper
         /// <exception cref="System.NotImplementedException"></exception>
         public void ChangeConfig(string endpoint, string username, string password)
         {
-            _endpoint = string.IsNullOrWhiteSpace(username) ? "https://cloud.scorm.com/tc/U2S4SI5FY0/sandbox/" : endpoint;
+            _endpoint = string.IsNullOrWhiteSpace(username) ? "https://lrs.adlnet.gov/xAPI/" : endpoint;
             _username = string.IsNullOrWhiteSpace(username) ? "Nja986GYE1_XrWMmFUE" : username;
             _password = string.IsNullOrWhiteSpace(password) ? "Bd9lDr1kjaWWY6RID_4" : password;
 

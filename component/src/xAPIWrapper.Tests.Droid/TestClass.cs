@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Android.App.Admin;
 using NUnit.Framework;
 using TinCan.Standard;
-using TinCan.Standard.Documents;
-using TinCan.Standard.LRSResponses;
 using TinCan.xAPIWrapper;
 
 namespace xAPIWrapper.Tests.Droid
@@ -63,6 +60,20 @@ namespace xAPIWrapper.Tests.Droid
         }
 
         /// <summary>
+        ///     Tests the state of the get.
+        /// </summary>
+        /// <returns>Task.</returns>
+        [Test]
+        public async Task TestGetState()
+        {
+            var task = await _xAPIWrapper.GetState("test", Support.Agent, "testState", _guid, string.Empty,
+                string.Empty, string.Empty);
+            Assert.IsTrue(task.Success);
+            Assert.IsInstanceOf<Activity>(task.Content.Activity);
+            if (task.Content.Registration != null) Assert.AreEqual(task.Content.Registration.Value, _guid);
+        }
+
+        /// <summary>
         ///     Tests the get statements.
         /// </summary>
         /// <returns>Task.</returns>
@@ -97,6 +108,14 @@ namespace xAPIWrapper.Tests.Droid
             };
             var task = await _xAPIWrapper.GetStatements(queryParams);
 
+            Assert.IsTrue(task.Success);
+        }
+
+        [Test]
+        public async Task TestSendState()
+        {
+            var task = await _xAPIWrapper.SendState("test", Support.Agent, "testState", _guid, string.Empty,
+                string.Empty, string.Empty);
             Assert.IsTrue(task.Success);
         }
 
@@ -137,28 +156,6 @@ namespace xAPIWrapper.Tests.Droid
             var statements = new List<Statement> {statement, statement1, statement2};
             var task = await _xAPIWrapper.SendStatements(statements);
             Assert.IsTrue(task.Success);
-        }
-
-        [Test]
-        public async Task TestSendState()
-        {
-            var task = await _xAPIWrapper.SendState("test", Support.Agent, "testState", _guid, string.Empty,
-                string.Empty, string.Empty);
-            Assert.IsTrue(task.Success);
-        }
-
-        /// <summary>
-        /// Tests the state of the get.
-        /// </summary>
-        /// <returns>Task.</returns>
-        [Test]
-        public async Task TestGetState()
-        {
-            var task = await _xAPIWrapper.GetState("test", Support.Agent, "testState", _guid, string.Empty,
-                string.Empty, string.Empty);
-            Assert.IsTrue(task.Success);
-            Assert.IsInstanceOf<Activity>(task.Content.Activity);
-            if (task.Content.Registration != null) Assert.AreEqual(task.Content.Registration.Value, _guid);
         }
     }
 }
