@@ -37,7 +37,7 @@ namespace xAPIWrapper.Tests.Droid
         /// </summary>
         private APIWrapper _xAPIWrapper;
 
-        private Guid _guid;
+        private Guid _guid = Guid.NewGuid();
 
         [Test]
         public async Task TestGetAbout()
@@ -59,6 +59,15 @@ namespace xAPIWrapper.Tests.Droid
             Assert.IsInstanceOf<Activity>(task.Content.Activity);
         }
 
+
+        [Test]
+        public async Task TestSendState()
+        {
+            var task = await _xAPIWrapper.SendState(Support.Activity.ID, Support.Agent, Guid.NewGuid().ToString(), _guid, string.Empty,
+                string.Empty, string.Empty);
+            Assert.IsTrue(task.Success);
+        }
+
         /// <summary>
         ///     Tests the state of the get.
         /// </summary>
@@ -66,7 +75,7 @@ namespace xAPIWrapper.Tests.Droid
         [Test]
         public async Task TestGetState()
         {
-            var task = await _xAPIWrapper.GetState("test", Support.Agent, "testState", _guid, string.Empty,
+            var task = await _xAPIWrapper.GetState(Support.Activity.ID, Support.Agent, _guid.ToString(), _guid, string.Empty,
                 string.Empty, string.Empty);
             Assert.IsTrue(task.Success);
             Assert.IsInstanceOf<Activity>(task.Content.Activity);
@@ -108,14 +117,6 @@ namespace xAPIWrapper.Tests.Droid
             };
             var task = await _xAPIWrapper.GetStatements(queryParams);
 
-            Assert.IsTrue(task.Success);
-        }
-
-        [Test]
-        public async Task TestSendState()
-        {
-            var task = await _xAPIWrapper.SendState("test", Support.Agent, "testState", _guid, string.Empty,
-                string.Empty, string.Empty);
             Assert.IsTrue(task.Success);
         }
 

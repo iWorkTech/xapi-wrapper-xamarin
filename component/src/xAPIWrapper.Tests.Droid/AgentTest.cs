@@ -59,8 +59,7 @@ namespace xAPIWrapper.Tests.Droid
         {
             var mbox = "mailto:tincancsharp@tincanapi.com";
 
-            var cfg = new JObject();
-            cfg.Add("mbox", mbox);
+            var cfg = new JObject {{"mbox", mbox}};
 
             var obj = new Agent(cfg);
             Assert.IsInstanceOf<Agent>(obj);
