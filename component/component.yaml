@@ -13,7 +13,7 @@ libraries:
 icons: 
   - xAPIWrapper_128x128.png
   - xAPIWrapper_512x512.png
-version: 1.0.1
+version: 1.0.0
 details: Details.md
 getting-started: GettingStarted.md
 samples: 
@@ -26,11 +26,11 @@ samples:
     nobuild: "true"
     configuration: Release|Any CPU
 id: xAPIWrapper
-summary: Allows apps to capture user experiences and interface with any Learning Record Store compliant witht the TINCAN Standard Specification.
+summary: Allows apps to capture user experiences within the app and push them to any Learning Record Store compliant with the TINCAN API Specification.
 publisher-url: http://www.iworktech.com
 license: License.md
 screenshots: 
   - screenshot.png
 name: xAPIWrapper
-publisher: IWORKTECH INC.
+publisher: iWork Technologie LLC and Pvt. Ltd.
 ...
