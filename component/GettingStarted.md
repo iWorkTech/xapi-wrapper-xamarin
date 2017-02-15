@@ -22,8 +22,7 @@ The complex interactions can be captured in form of TINCAN statements, activitie
 5. The xAPIWrapper implementation makes generating statements as easy as adding log statements to your code
 
 ## Available on 
-
-![icons] (../icon_set.png)
+![icons] (https://thedistance.co.uk/wp-content/uploads/2015/10/ios.android.icon_.jpg)
 
 ## Installation and Usage
 Import component in your Android and iOS apps.
