@@ -1,8 +1,6 @@
 # Interface with any LRS from your Xamarin Mobile or .NET Apps
-The xAPIWrapper component and the xAPI.NET Standard Library enables capturing of 
-xAPI/TINCAN statements and other artifacts that can to pushed to any standard's compliant LRS. 
-It has two main libraries in the component that can be used independently. 
-- TINCAN Standard .NET Library
+The xAPIWrapper component and the xAPI.NET Standard Library enables capturing of xAPI/TINCAN statements and other artifacts that can to pushed to any standard's compliant LRS. It has two main libraries in the component that can be used independently. 
+- TINCAN Standard .NET Libary
 - xAPIWrapper, wrapper and simplified interface
 
 ## What is xAPI/TINCAN?
@@ -10,15 +8,14 @@ It has two main libraries in the component that can be used independently.
 - For technical documentation refer to this site [TINCAN API](http://tincanapi.com/)
 - For information on Xamarin refer to this site [Xamarin](http://www.xamarin.com/)
 
-With easy-to-use SDKs for Android and iOS, helpful classes and methods to track user activities, as 
-TINCAN statements, activities or scores and other interactions in a simple Actor, Object, Verb verbatim. 
+With easy-to-use SDKs for Android and iOS, helpful classes and methods to track user activities, as TINCAN statements, activities or scores and other interacations in a simple Actor, Object, Verb verbatim. 
 
 ## Quick Start Notes:
 1. .NET Standard 1.6 compatible library
 2. An xAPIWrapper port implemented in C# that can be used to interface with any LRS
-3. The library can be used with platforms that supports the .NET Standard
+3. The library can be used with plafforms that supports the .NET Standard
 4. The xAPIWrapper eliminates the need for client/end user to know the internals of the TINCAN specification
-5. The xAPIWrapper implementation makes generating statements as easy as adding log statements to your code
+5. The xAPIWrapper implemention makes generating statements as easy as adding log statetments to your code
 
 ## Available on 
 
