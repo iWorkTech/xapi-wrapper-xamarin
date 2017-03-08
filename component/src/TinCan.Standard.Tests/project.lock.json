@@ -194,7 +194,7 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/3.6.0": {
+      "NUnit/3.6.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -207,10 +207,10 @@
           "lib/netstandard1.6/nunit.framework.dll": {}
         }
       },
-      "NUnit.Console/3.6.0": {
+      "NUnit.Console/3.6.1": {
         "type": "package",
         "dependencies": {
-          "NUnit.ConsoleRunner": "3.6.0",
+          "NUnit.ConsoleRunner": "3.6.1",
           "NUnit.Extension.NUnitProjectLoader": "3.5.0",
           "NUnit.Extension.NUnitV2Driver": "3.6.0",
           "NUnit.Extension.NUnitV2ResultWriter": "3.5.0",
@@ -218,7 +218,7 @@
           "NUnit.Extension.VSProjectLoader": "3.5.0"
         }
       },
-      "NUnit.ConsoleRunner/3.6.0": {
+      "NUnit.ConsoleRunner/3.6.1": {
         "type": "package"
       },
       "NUnit.Extension.NUnitProjectLoader/3.5.0": {
@@ -239,7 +239,7 @@
       "NUnit3TestAdapter/3.7.0": {
         "type": "package"
       },
-      "NUnitLite/3.6.0": {
+      "NUnitLite/3.6.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0"
@@ -1788,16 +1788,14 @@
         "tools/install.ps1"
       ]
     },
-    "NUnit/3.6.0": {
-      "sha512": "mqJP3DI3mE9YSx0o7R5loyIm0NnLJLSl2lmXn84gSkOmLWzlbrxS0oW/cCZF25tB+6Anday/mbkRUXmdvEvSCg==",
+    "NUnit/3.6.1": {
+      "sha512": "0FPgTzx3+8HQsQLv85IRXuQVlc53whh1gWQkYL2sqQu7sj9cCiNTgiv0SCTut7lvRX/fXyBIS954VJEjxtL5gw==",
       "type": "package",
-      "path": "nunit/3.6.0",
+      "path": "nunit/3.6.1",
       "files": [
         "CHANGES.txt",
         "LICENSE.txt",
         "NOTICES.txt",
-        "NUnit.3.6.0.nupkg.sha512",
-        "NUnit.nuspec",
         "lib/MonoAndroid/nunit.framework.dll",
         "lib/MonoAndroid/nunit.framework.xml",
         "lib/Xamarin.iOS10/nunit.framework.dll",
@@ -1814,27 +1812,29 @@
         "lib/netstandard1.6/nunit.framework.dll",
         "lib/netstandard1.6/nunit.framework.xml",
         "lib/portable-net45+win8+wp8+wpa81/nunit.framework.dll",
-        "lib/portable-net45+win8+wp8+wpa81/nunit.framework.xml"
+        "lib/portable-net45+win8+wp8+wpa81/nunit.framework.xml",
+        "nunit.3.6.1.nupkg.sha512",
+        "nunit.nuspec"
       ]
     },
-    "NUnit.Console/3.6.0": {
-      "sha512": "xfNMb+4xq/4AgNnFcYMU10N1ugvKnGzU3LdgqJbo1yccCro7GR0e8+68B3BqV7tX88R/PAzKoNJ5bukYW0hFYw==",
+    "NUnit.Console/3.6.1": {
+      "sha512": "lQMRU486A4dazD6H+THNUkrPX6lKgCSAl4b55nFCDxLQMTg2UrjzNKA23DHy9aObNQmR9IrQ+zvjNXw5yIaTFA==",
       "type": "package",
-      "path": "nunit.console/3.6.0",
+      "path": "nunit.console/3.6.1",
       "files": [
-        "nunit.console.3.6.0.nupkg.sha512",
+        "nunit.console.3.6.1.nupkg.sha512",
         "nunit.console.nuspec"
       ]
     },
-    "NUnit.ConsoleRunner/3.6.0": {
-      "sha512": "72jlX98JoBfWBZWgPieC4Z2cFIjV4yK5fJJAVpI+Sp7DspFJKBcilE4PfyrMusHqBH3AqVJvBBsbn5BYosJT9g==",
+    "NUnit.ConsoleRunner/3.6.1": {
+      "sha512": "2JWWlSZ03NGYLk6wc/3n6iQFixociL25o7Alc20SdwCGdku1qD6NBz4kNglK+97YkuPiPV5rlx5s9NIStKlyxQ==",
       "type": "package",
-      "path": "nunit.consolerunner/3.6.0",
+      "path": "nunit.consolerunner/3.6.1",
       "files": [
         "CHANGES.txt",
         "LICENSE.txt",
         "NOTICES.txt",
-        "nunit.consolerunner.3.6.0.nupkg.sha512",
+        "nunit.consolerunner.3.6.1.nupkg.sha512",
         "nunit.consolerunner.nuspec",
         "tools/Mono.Cecil.dll",
         "tools/nunit-agent-x86.exe",
@@ -1921,16 +1921,14 @@
         "tools/nunit.engine.dll"
       ]
     },
-    "NUnitLite/3.6.0": {
-      "sha512": "wDYsKH9cU9n2B5oEyh/rc0gfcwGkYbzPPCBDT7IdNdm0xizO0oYQ20OLD6FrX8MMcd2KLDujqiN0dl1aMddvEw==",
+    "NUnitLite/3.6.1": {
+      "sha512": "/xhCtPE0bxP26Hy8I5HScwFHM/+/0JyZUTiV5wAZfBKNcP55Jt/PMOo0pGqyfnW3EFiX9eG+aUfVv09g5scsmA==",
       "type": "package",
-      "path": "nunitlite/3.6.0",
+      "path": "nunitlite/3.6.1",
       "files": [
         "CHANGES.txt",
         "LICENSE.txt",
         "NOTICES.txt",
-        "NUnitLite.3.6.0.nupkg.sha512",
-        "NUnitLite.nuspec",
         "content/Program.cs",
         "content/Program.vb",
         "lib/net20/nunitlite.dll",
@@ -1939,6 +1937,8 @@
         "lib/net45/nunitlite.dll",
         "lib/netstandard1.6/nunitlite.dll",
         "lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac/nunitlite.dll",
+        "nunitlite.3.6.1.nupkg.sha512",
+        "nunitlite.nuspec",
         "tools/install.ps1",
         "tools/net20/nunitlite-runner.exe",
         "tools/net35/nunitlite-runner.exe",
@@ -5290,11 +5290,11 @@
     "": [
       "Microsoft.NETCore.Portable.Compatibility >= 1.0.2",
       "NETStandard.Library >= 1.6.1",
-      "NUnit >= 3.6.0",
-      "NUnit.Console >= 3.6.0",
-      "NUnit.ConsoleRunner >= 3.6.0",
+      "NUnit >= 3.6.1",
+      "NUnit.Console >= 3.6.1",
+      "NUnit.ConsoleRunner >= 3.6.1",
       "NUnit3TestAdapter >= 3.7.0",
-      "NUnitLite >= 3.6.0",
+      "NUnitLite >= 3.6.1",
       "Newtonsoft.Json >= 9.0.1"
     ],
     ".NETStandard,Version=v1.6": []
@@ -5323,11 +5323,11 @@
       "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
       "NETStandard.Library": "1.6.1",
       "Newtonsoft.Json": "9.0.1",
-      "NUnit": "3.6.0",
-      "NUnit.Console": "3.6.0",
-      "NUnit.ConsoleRunner": "3.6.0",
+      "NUnit": "3.6.1",
+      "NUnit.Console": "[3.6.1, )",
+      "NUnit.ConsoleRunner": "3.6.1",
       "NUnit3TestAdapter": "3.7.0",
-      "NUnitLite": "3.6.0"
+      "NUnitLite": "3.6.1"
     },
     "frameworks": {
       "netstandard1.6": {}
