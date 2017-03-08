@@ -13,7 +13,7 @@ libraries:
 icons: 
   - xAPIWrapper_128x128.png
   - xAPIWrapper_512x512.png
-version: 1.0.1
+version: 1.0.0
 details: Details.md
 getting-started: GettingStarted.md
 samples: 

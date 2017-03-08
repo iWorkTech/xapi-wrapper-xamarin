@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinCan.xAPIWrapper", "xAPIWrapper\xAPIWrapper\TinCan.xAPIWrapper.csproj", "{4B989939-4D31-49A4-8525-64D00E8C0AB4}"
 EndProject
@@ -339,7 +339,7 @@ Global
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.AppStore|x64.ActiveCfg = AppStore|iPhoneSimulator
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.AppStore|x86.ActiveCfg = AppStore|iPhone
-		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{D2CED8F0-7A76-454D-B5F7-9E8B9FE6A58E}.Debug|iPhone.Build.0 = Debug|iPhone
