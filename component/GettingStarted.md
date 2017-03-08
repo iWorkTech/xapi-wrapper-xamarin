@@ -10,9 +10,9 @@ compliant LRS. It has two main libraries in the component that can be used indep
 - For technical documentation refer to this site [TINCAN API](http://tincanapi.com/)
 - For information on Xamarin refer to this site [Xamarin](http://www.xamarin.com/)
 
-With easy-to-use SDKs for Android and iOS, helpful classes and methods to track user 
-activities, as TINCAN statements, activities or scores and other interactions in a simple 
-Actor, Object, Verb verbatim. 
+The component has easy-to-use apis for Android and iOS, helpful classes and methods to track user 
+interaction with any digital assets in a simple Actor, Object, Verb verbatim. 
+The complex interactions can be captured in form of TINCAN statements, activities or scores using simple log like statements.
 
 ## Quick Start Notes:
 1. .NET Standard 1.6 compatible library
@@ -22,8 +22,7 @@ Actor, Object, Verb verbatim.
 5. The xAPIWrapper implementation makes generating statements as easy as adding log statements to your code
 
 ## Available on 
-
-![icons] (../icon_set.png)
+![icons] (https://thedistance.co.uk/wp-content/uploads/2015/10/ios.android.icon_.jpg)
 
 ## Installation and Usage
 Import component in your Android and iOS apps.
