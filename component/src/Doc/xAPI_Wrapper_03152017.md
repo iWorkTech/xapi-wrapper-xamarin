@@ -1,6 +1,6 @@
 <left>
 
-# xAPI - Capure Human Performance
+# xAPI - Capture Human Performance
 
 </left>
 
@@ -113,7 +113,7 @@ Button.TouchUpInside += async delegate
 
 ## xAPI is Unit Tested and Asynchronous by design
 
-The xAPIWrapper is united tested for every interface for standards compliance and implemented with async-await pattern to be inherently high performaning. Each interface and API call had dual implementation with synchronous and asynchronous calls.
+The xAPIWrapper is united tested for every interface for standards compliance and implemented with async-await pattern to be inherently high performing. Each interface and API call had dual implementation with synchronous and asynchronous calls.
 
 ![xAPIWrapper!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
 
