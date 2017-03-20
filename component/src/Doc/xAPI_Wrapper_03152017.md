@@ -14,7 +14,7 @@ or performance context information (i.e., experience). xAPI
 applies “activity streams” to tracking data and provides sub-APIs
 to access and store information about state and content. This
 enables nearly dynamic tracking of activities from any platform
-or software system—from traditional Learning Management Systems
+or software system, from traditional Learning Management Systems
 to mobile devices, simulations, wearables, physical beacons,
 and more. For more information visit [adl.gov](https://www.adlnet.gov/xapi)
 
@@ -50,7 +50,7 @@ and more. For more information visit [adl.gov](https://www.adlnet.gov/xapi)
 - Platform and subject-matter agnostic
 - Built upon RESTful and JSON (so it’s lightweight)
 - Human (and machine) readable
-- 100% free—no licensing fees or vendor lock-in
+- 100% free with no licensing fees or vendor lock-in
 - Open source and community maintained
 
 </column>
@@ -63,11 +63,11 @@ and more. For more information visit [adl.gov](https://www.adlnet.gov/xapi)
 
 <row>
 
-xAPIWrapper is a Xamarin and .NET Standard Compoment built to simplify intefarcing with standards based LRS from any Xamarin iOS, Andriod or Winddows Mobile Application or any .NET Web, Enterprise or Desktop application. The component provides a simple interface, very similar to adding Log statements to the code. It has easy-to-use apis for Android and iOS, helpful classes and methods to track user interaction with any digital assets in a simple Actor, Object, Verb verbatim. The complex interactions can be captured in form of statements, activities or scores using simple log like statements.
+xAPIWrapper is a Xamarin and .NET Standard component built to simplify interfacing with standards based LRS from any Xamarin iOS, Android or Windows Mobile Application or any .NET Web, Enterprise or Desktop application. The component provides a simple interface, very similar to adding Log statements to the code. It has easy-to-use api's for Android and iOS, helpful classes and methods to track user interaction with any digital assets in a simple Actor, Object, Verb verbatim. The complex interactions can be captured in form of statements, activities or scores using simple log like statements.
 
 ## Why use the xAPIWrapper?
 1. It's a .NET Standard library, that support majority of the .NET apps
-2. An xAPIWrapper.js port implemented in C# that can be leveraged within your Xamarin iOS or Andriod app to interface with any LRS
+2. An xAPIWrapper.js port implemented in C# that can be leveraged within your Xamarin iOS or Android app to interface with any LRS
 3. It abstracts the complexities and semantics of the xAPI specification
 4. It eliminates the need for end users to know the internals of the xAPI specification
 5. Using the library to generate statements is as easy as adding log statements to your code
@@ -109,11 +109,11 @@ Button.TouchUpInside += async delegate
 
 #### It's Free and Open Source!
 
-> xAPIWrapper is a opensource under a Apache License and is 100% free for anyone to use to enhance. 
+> xAPIWrapper is a open source under a Apache License and is 100% free for anyone to use to enhance. 
 
-## xAPI is Unit Tested and Performant
+## xAPI is Unit Tested and Asynchronous by design
 
-The xAPIWrapper is united tested for every inteface for standards compliance and implemented with async-await pattern to be performant. Each interface and API call had dual implementation with synchronous and asynchronous calls.
+The xAPIWrapper is united tested for every interface for standards compliance and implemented with async-await pattern to be inherently high performaning. Each interface and API call had dual implementation with synchronous and asynchronous calls.
 
 ![xAPIWrapper!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
 
@@ -124,7 +124,7 @@ The xAPIWrapper is united tested for every inteface for standards compliance and
 <left>
 
 Our mission at IWORKTECH is to __inspire ingenuity to transform innovation__.
-To unsubscribe please click here: [send us an email!][1]
+To un-subscribe please click here: [send us an email!][1]
 
 [1]: mailto:info@iworktech.com
-</lrft>
+</left>

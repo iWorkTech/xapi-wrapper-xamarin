@@ -3,7 +3,12 @@
     "ignoreWordsList": [
         "xAPIWrapper",
         "TINCAN",
-        "Xamarin"
+        "Xamarin",
+        "xAPI",
+        "IWORKTECH",
+        "JSON",
+        "eBook",
+        "apps"
     ],
     "documentTypes": [
         "markdown",
