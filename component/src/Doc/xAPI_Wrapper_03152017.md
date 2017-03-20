@@ -111,6 +111,12 @@ Button.TouchUpInside += async delegate
 
 > xAPIWrapper is a opensource under a Apache License and is 100% free for anyone to use to enhance. 
 
+## xAPI is Unit Tested and Performant
+
+The xAPI is united tested for every inteface for standards compliance and implemented with async-await pattern to be performant. 
+
+![xAPIWrapper!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/Screen%20Shot%202017-02-12%20at%206.33.16%20AM.png "xAPIWrapper - Unit Testing")) 
+
 ***
 
 <left>
