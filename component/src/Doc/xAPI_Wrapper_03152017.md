@@ -117,9 +117,7 @@ Button.TouchUpInside += async delegate
 
  Each interface and API has dual implementation with synchronous and asynchronous calls using async-await pattern to be inherently high performing. The xAPIWrapper is unit tested from within the web and mobile apps to test each interfaces standards compliance. 
 
-![xAPIWrapper - Total Coverage!](http://xapi.iworktech.com/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
-
-![xAPIWrapper - Unit Testing Snapshot!](http://xapi.iworktech.com/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
+![xAPIWrapper - Total Coverage!](http://xapi.iworktech.com/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") ![xAPIWrapper - Unit Testing Snapshot!](http://xapi.iworktech.com/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
 
 ***
 
