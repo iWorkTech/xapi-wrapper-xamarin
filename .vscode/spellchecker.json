@@ -8,7 +8,9 @@
         "IWORKTECH",
         "JSON",
         "eBook",
-        "apps"
+        "apps",
+        "async",
+        "api's"
     ],
     "documentTypes": [
         "markdown",
