@@ -119,7 +119,7 @@ Button.TouchUpInside += async delegate
 
 ![xAPIWrapper - Total Coverage!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
 
-![xAPIWrapper - Unit Testing Sanpshot!](https://github.com/iWorkTech/xapi-wrapper-xamarin/component/src/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
+![xAPIWrapper - Unit Testing Snapshot!](https://github.com/iWorkTech/xapi-wrapper-xamarin/component/src/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
 
 ***
 
