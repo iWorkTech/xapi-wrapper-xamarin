@@ -16,7 +16,9 @@ to access and store information about state and content. This
 enables nearly dynamic tracking of activities from any platform
 or software system, from traditional Learning Management Systems
 to mobile devices, simulations, wearables, physical beacons,
-and more. For more information visit [adl.gov](https://www.adlnet.gov/xapi)
+and more. 
+
+#### For more information refer to : [adlnet.gov](https://www.adlnet.gov/xapi)
 
 *****
 <row>
@@ -111,19 +113,20 @@ Button.TouchUpInside += async delegate
 
 > xAPIWrapper is a open source under a Apache License and is 100% free for anyone to use to enhance. 
 
-## xAPI is Unit Tested and Asynchronous by design
+## xAPIWrapper is Asynchronous by Design 
 
-The xAPIWrapper is united tested for every interface for standards compliance and implemented with async-await pattern to be inherently high performing. Each interface and API call had dual implementation with synchronous and asynchronous calls.
+ Each interface and API has dual implementation with synchronous and asynchronous calls using async-await pattern to be inherently high performing. The xAPIWrapper is unit tested from within the web and mobile apps to test each interfaces standards compliance. 
 
-![xAPIWrapper!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
+![xAPIWrapper - Total Coverage!](https://github.com/iWorkTech/xapi-wrapper-xamarin/blob/master/component/src/Images/UnitTest1.png "xAPIWrapper - Unit Testing - 1") 
 
-![xAPIWrapper!](https://github.com/iWorkTech/xapi-wrapper-xamarin/component/src/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
+![xAPIWrapper - Unit Testing Sanpshot!](https://github.com/iWorkTech/xapi-wrapper-xamarin/component/src/Images/UnitTest2.png "xAPIWrapper - Unit Testing - 2") 
 
 ***
 
 <left>
 
-Our mission at IWORKTECH is to __inspire ingenuity to transform innovation__.
+Our mission at IWORKTECH is to __inspire ingenuity to transform innovation__. Please [share your feedback][1] via email or replying to this blog post. 
+
 To un-subscribe please click here: [send us an email!][1]
 
 [1]: mailto:info@iworktech.com
