@@ -19,7 +19,7 @@ With easy-to-use SDKs for Android and iOS, helpful classes and methods to track 
 
 ## Available on 
 
-![icons] (https://thedistance.co.uk/wp-content/uploads/2015/10/ios.android.icon_.jpg)
+![icons](https://thedistance.co.uk/wp-content/uploads/2015/10/ios.android.icon_.jpg)
 
 ## Installation and Usage
 Import component in your Android and iOS apps.
